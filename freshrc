@@ -1,1 +1,2 @@
 fresh freshshell/fresh bin/fresh --bin
+fresh freshshell/fresh-open bin/fresh-open --bin
