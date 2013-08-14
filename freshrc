@@ -1,7 +1,18 @@
 # fresh
 fresh freshshell/fresh bin/fresh --bin
+
+# fresh plugins
 fresh freshshell/fresh-open bin/fresh-open --bin
 fresh freshshell/fresh-open shell/cdf.sh
 
 # leiningen
 fresh akatov/leinfiles . --file=~/.lein/ --ref=2c434b513a1665fa9af9c4af8fcaf61b798feca6 # TODO: remove ref and change to cldwalker/leinfiles once PR is merged
+
+# gitconfig
+fresh-options --file=~/.gitconfig
+  fresh gitconfig/user
+  fresh gitconfig/alias
+  fresh gitconfig/push
+  fresh gitconfig/credential
+  fresh https://bitbucket.org/akatov/private.git gitconfig
+fresh-options
