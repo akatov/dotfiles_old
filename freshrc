@@ -6,6 +6,9 @@ fresh freshshell/fresh-open bin/fresh-open --bin
 fresh freshshell/fresh-open shell/cdf.sh
 fresh akatov/fresh-profile bin/fresh-profile --bin
 
+# bin scripts
+fresh https://gist.github.com/1209316.git gitio --bin
+
 # leiningen
 fresh akatov/leinfiles . --file=~/.lein/ --ref=2c434b513a1665fa9af9c4af8fcaf61b798feca6 # TODO: remove ref and change to cldwalker/leinfiles once PR is merged
 
