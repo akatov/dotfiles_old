@@ -21,3 +21,9 @@ fresh-options --file=~/.gitconfig
   [[ -n "$PROFILE" ]] && \
     fresh https://bitbucket.org/akatov/private.git gitconfig/$PROFILE
 fresh-options
+
+# zshrc
+fresh-options --file=~/.zshrc
+  fresh https://bitbucket.org/akatov/private.git zshrc/default
+  fresh zshrc/$PROFILE
+fresh-options
