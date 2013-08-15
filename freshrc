@@ -13,7 +13,7 @@ fresh https://gist.github.com/1209316.git gitio --bin
 fresh akatov/leinfiles . --file=~/.lein/ --ref=2c434b513a1665fa9af9c4af8fcaf61b798feca6 # TODO: remove ref and change to cldwalker/leinfiles once PR is merged
 
 # gitconfig
-fresh-options --file=~/.gitconfig
+fresh-options --file=~/.gitconfig --marker
   fresh gitconfig/user
   fresh gitconfig/alias
   fresh gitconfig/push
@@ -26,7 +26,7 @@ fresh-options --file=~/.gitconfig
 fresh-options
 
 # zshrc
-fresh-options --file=~/.zshrc
+fresh-options --file=~/.zshrc --marker
   fresh https://bitbucket.org/akatov/private.git zshrc/default
   fresh zshrc/$PROFILE
 fresh-options
