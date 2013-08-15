@@ -59,3 +59,6 @@ fresh rdebugrc --file
 
 # yi
 fresh yi.hs --file=~/.config/yi/yi.hs
+
+# s3cfg
+fresh https://bitbucket.org/akatov/private.git s3cfg/$PROFILE --file=~/.s3cfg --allow-empty
