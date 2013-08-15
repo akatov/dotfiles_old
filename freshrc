@@ -1,5 +1,5 @@
 # fresh
-fresh freshshell/fresh bin/fresh --bin
+fresh akatov/fresh bin/fresh --bin --ref=441ff12264603914ca81634820d1baca23dfd015 # TODO: remove ref and change to freshshell/fresh once PR is merged
 
 # fresh plugins
 fresh freshshell/fresh-open bin/fresh-open --bin
@@ -13,22 +13,19 @@ fresh https://gist.github.com/1209316.git gitio --bin
 fresh akatov/leinfiles . --file=~/.lein/ --ref=2c434b513a1665fa9af9c4af8fcaf61b798feca6 # TODO: remove ref and change to cldwalker/leinfiles once PR is merged
 
 # gitconfig
-fresh-options --file=~/.gitconfig --marker
+fresh-options --file=~/.gitconfig --marker --allow-empty
   fresh gitconfig/user
   fresh gitconfig/alias
   fresh gitconfig/push
   fresh gitconfig/credential
-  [[ -n "$PROFILE" ]] && \
-    fresh gitconfig/$PROFILE
   fresh https://bitbucket.org/akatov/private.git gitconfig/default
-  [[ -n "$PROFILE" ]] && \
-    fresh https://bitbucket.org/akatov/private.git gitconfig/$PROFILE
+  fresh https://bitbucket.org/akatov/private.git gitconfig/$PROFILE
 fresh-options
 
 # zshrc
-fresh-options --file=~/.zshrc --marker
+fresh-options --file=~/.zshrc --marker --allow-empty
   fresh https://bitbucket.org/akatov/private.git zshrc/default
-  fresh zshrc/$PROFILE
+  [[ -n "$PROFILE" ]] && fresh zshrc/$PROFILE
 fresh-options
 
 # tmux.conf
