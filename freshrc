@@ -30,3 +30,8 @@ fresh-options --file=~/.zshrc --marker
   fresh https://bitbucket.org/akatov/private.git zshrc/default
   fresh zshrc/$PROFILE
 fresh-options
+
+# tmux.conf
+fresh-options --file=~/.tmux.conf --marker
+  fresh tmux.conf/all
+fresh-options
