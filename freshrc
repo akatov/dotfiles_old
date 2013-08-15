@@ -35,3 +35,30 @@ fresh-options
 fresh-options --file=~/.tmux.conf --marker
   fresh tmux.conf/all
 fresh-options
+
+# ghci
+fresh ghci --file
+
+# irbrc
+fresh irbrc --file
+
+# pryrc
+fresh pryrc --file
+
+# ackrc
+fresh ackrc --file
+
+# mongorc.js
+fresh mongorc.js --file
+
+# Xdefaults
+fresh Xdefaults --file
+
+# csshrc
+fresh csshrc --file
+
+# rdebugrc
+fresh rdebugrc --file
+
+# yi
+fresh yi.hs --file=~/.config/yi/yi.hs
