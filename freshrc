@@ -1,5 +1,5 @@
 # fresh
-fresh akatov/fresh bin/fresh --bin --ref=441ff12264603914ca81634820d1baca23dfd015 # TODO: remove ref and change to freshshell/fresh once PR is merged
+fresh akatov/fresh bin/fresh --bin --ref=9d52daeb9f6c3aaf6f4ef5dfe09512d0b03eb55b # TODO: remove ref and change to freshshell/fresh once PR is merged
 
 # fresh plugins
 fresh freshshell/fresh-open bin/fresh-open --bin
@@ -13,7 +13,7 @@ fresh https://gist.github.com/1209316.git gitio --bin
 fresh akatov/leinfiles . --file=~/.lein/ --ref=2c434b513a1665fa9af9c4af8fcaf61b798feca6 # TODO: remove ref and change to cldwalker/leinfiles once PR is merged
 
 # gitconfig
-fresh-options --file=~/.gitconfig --marker --allow-empty
+fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh gitconfig/user
   fresh gitconfig/alias
   fresh gitconfig/push
@@ -23,7 +23,7 @@ fresh-options --file=~/.gitconfig --marker --allow-empty
 fresh-options
 
 # zshrc
-fresh-options --file=~/.zshrc --marker --allow-empty
+fresh-options --file=~/.zshrc --marker --ignore-missing
   fresh https://bitbucket.org/akatov/private.git zshrc/default
   [[ -n "$PROFILE" ]] && fresh zshrc/$PROFILE
 fresh-options
@@ -61,4 +61,4 @@ fresh rdebugrc --file
 fresh yi.hs --file=~/.config/yi/yi.hs
 
 # s3cfg
-fresh https://bitbucket.org/akatov/private.git s3cfg/$PROFILE --file=~/.s3cfg --allow-empty
+fresh https://bitbucket.org/akatov/private.git s3cfg/$PROFILE --file=~/.s3cfg --ignore-missing
