@@ -1,10 +1,41 @@
 # fresh
-fresh akatov/fresh bin/fresh --bin --ref=9d52daeb9f6c3aaf6f4ef5dfe09512d0b03eb55b # TODO: remove ref and change to freshshell/fresh once PR is merged
+fresh akatov/fresh bin/fresh --bin # --ref=bed6290225c81ca998acdd556a8b339e3f401e1e # TODO: remove ref and change to freshshell/fresh once PR is merged
 
 # fresh plugins
 fresh freshshell/fresh-open bin/fresh-open --bin
-fresh freshshell/fresh-open shell/cdf.sh
 fresh akatov/fresh-profile bin/fresh-profile --bin
+
+# ~/bin
+fresh bin/emacsq --bin
+
+# shell
+fresh freshshell/fresh-open shell/cdf.sh
+fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+fresh profiles/$PROFILE --ignore-missing
+fresh https://bitbucket.org/akatov/private.git profiles/$PROFILE --ignore-missing
+fresh shell/\*
+
+# oh-my-zsh
+fresh robbyrussell/oh-my-zsh . --file=~/.oh-my-zsh2/
+fresh akatov/oh-my-zsh plugins/cask --file=oh-my-zsh-custom/plugins/cask/ --ref=1af012d4991a36bfb0e2def3e67f5a0e56fc49e4
+fresh akatov/oh-my-zsh plugins/grunt --file=oh-my-zsh-custom/plugins/grunt/ --ref=55c90b1d6cbda581f9ccd41ea1c8da15da98d5ee
+fresh zsh-users/zsh-syntax-highlighting . --file=oh-my-zsh-custom/plugins/zsh-syntax-highlighting/
+
+# zshrc
+fresh-options --file=~/.zshrc --marker --ignore-missing
+  # oh-my-zsh
+  fresh zshrc/oh-my-zsh/setup
+  fresh zshrc/oh-my-zsh/theme
+  fresh zshrc/oh-my-zsh/options
+  fresh zshrc/oh-my-zsh/highlighters
+  fresh zshrc/oh-my-zsh/plugins
+  # custom plugins
+  fresh zshrc/oh-my-zsh/custom
+  fresh zshrc/oh-my-zsh/load
+  fresh https://bitbucket.org/akatov/private.git zshrc/default
+  fresh twe4ked/dotfiles shell/zsh/completion.zsh
+  fresh freshshell/fresh contrib/source-build.sh
+fresh-options
 
 # bin scripts
 fresh https://gist.github.com/1209316.git gitio --bin
@@ -20,12 +51,6 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh gitconfig/credential
   fresh https://bitbucket.org/akatov/private.git gitconfig/default
   fresh https://bitbucket.org/akatov/private.git gitconfig/$PROFILE
-fresh-options
-
-# zshrc
-fresh-options --file=~/.zshrc --marker --ignore-missing
-  fresh https://bitbucket.org/akatov/private.git zshrc/default
-  [[ -n "$PROFILE" ]] && fresh zshrc/$PROFILE
 fresh-options
 
 # tmux.conf

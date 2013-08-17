@@ -1,0 +1,36 @@
+plugins=()
+## git
+plugins+=git
+plugins+=git-flow
+plugins+=github
+## ruby
+plugins+=ruby
+plugins+=rails3
+plugins+=rails4
+plugins+=rake
+plugins+=capistrano
+plugins+=gem
+plugins+=bundler
+plugins+=thor
+## nodejs
+plugins+=node
+plugins+=npm
+plugins+=coffee
+plugins+=cake
+plugins+=bower
+## jvm
+plugins+=ant
+plugins+=mvn
+plugins+=lein
+plugins+=scala
+plugins+=jruby
+## python
+plugins+=python
+plugins+=pip
+## package management
+[[ $(uname) == "Linux"  ]] && plugins+=deb
+[[ $(uname) == "Darwin" ]] && plugins+=brew
+## heroku
+#plugins+=heroku
+## tmux
+# plugins+=tmux
