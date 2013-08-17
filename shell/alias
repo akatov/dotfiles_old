@@ -1,3 +1,6 @@
 alias c="cat"
+alias e="emacs -nw"
+alias ec="emacsclient -nw --alternate-editor='' -c"
+alias eq="emacsq"
 alias lh="ls -alh"
 alias l="ls"
