@@ -41,7 +41,8 @@ fresh-options --file=~/.zshrc --marker --ignore-missing
   # other
   fresh https://bitbucket.org/akatov/private.git zshrc/default
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
-  # fresh freshshell/fresh contrib/source-build.sh
+  fresh freshshell/fresh contrib/source-build.sh
+  fresh zshrc/dedup-path
 fresh-options
 
 # leiningen
