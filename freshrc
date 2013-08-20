@@ -41,7 +41,7 @@ fresh-options
 # zlogin, zlogout, zshenv
 fresh sorin-ionescu/prezto runcoms/zlogin --file
 fresh sorin-ionescu/prezto runcoms/zlogout --file
-fresh sorin-ionescu/prezto runcoms/zshenv --file
+# fresh sorin-ionescu/prezto runcoms/zshenv --file
 
 # completion
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
