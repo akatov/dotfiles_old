@@ -19,6 +19,21 @@ zstyle ':prezto:load' pmodule \
   'history' \
   'directory' \
   'spectrum' \
+  'gnu-utility' \
   'utility' \
   'completion' \
-  'prompt'
+  'git' \
+  'archive' \
+  'osx' \
+  'perl' \
+  'python' \
+  'ruby' \
+  'node' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'prompt' \
+  'homebrew' \
+  'haskell' \
+  'tmux' \
+  'emacs' \
+  
