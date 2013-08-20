@@ -1,5 +1,5 @@
 # fresh
-fresh akatov/fresh bin/fresh --bin # --ref=bed6290225c81ca998acdd556a8b339e3f401e1e # TODO: remove ref and change to freshshell/fresh once PR is merged
+fresh freshshell/fresh bin/fresh --bin
 
 # fresh plugins
 fresh freshshell/fresh-open bin/fresh-open --bin
