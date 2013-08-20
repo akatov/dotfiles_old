@@ -19,25 +19,36 @@ fresh https://bitbucket.org/akatov/private.git profiles/$PROFILE --ignore-missin
 fresh shell/\*
 fresh https://bitbucket.org/akatov/private.git shell/\*
 
-# oh-my-zsh
-fresh robbyrussell/oh-my-zsh . --file=~/.oh-my-zsh/
-fresh akatov/oh-my-zsh plugins/cask --file=oh-my-zsh-custom/plugins/cask/ --ref=1af012d4991a36bfb0e2def3e67f5a0e56fc49e4
-fresh akatov/oh-my-zsh plugins/grunt --file=oh-my-zsh-custom/plugins/grunt/ --ref=55c90b1d6cbda581f9ccd41ea1c8da15da98d5ee
-fresh zsh-users/zsh-syntax-highlighting . --file=oh-my-zsh-custom/plugins/zsh-syntax-highlighting/
+# prezto
+fresh sorin-ionescu/prezto . --file=~/.zprezto/
+# fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
+
+# zpreztorc
+fresh-options --file=~/.zpreztorc --marker --ignore-missing
+  fresh zshrc/zpreztorc/general
+  fresh zshrc/zpreztorc/editor
+  fresh zshrc/zpreztorc/git
+  fresh zshrc/zpreztorc/gnu-utility
+  fresh zshrc/zpreztorc/history-substring-search
+  fresh zshrc/zpreztorc/prompt
+  fresh zshrc/zpreztorc/ssh
+  fresh zshrc/zpreztorc/syntax-highlighting
+  fresh zshrc/zpreztorc/terminal
+  fresh zshrc/zpreztorc/tmux
+fresh-options
+
+# zlogin, zlogout, zshenv
+fresh sorin-ionescu/prezto runcoms/zlogin --file
+fresh sorin-ionescu/prezto runcoms/zlogout --file
+fresh sorin-ionescu/prezto runcoms/zshenv --file
 
 # completion
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 
 # zshrc
 fresh-options --file=~/.zshrc --marker --ignore-missing
-  # oh-my-zsh
-  fresh zshrc/oh-my-zsh/setup
-  fresh zshrc/oh-my-zsh/theme
-  fresh zshrc/oh-my-zsh/options
-  fresh zshrc/oh-my-zsh/highlighters
-  fresh zshrc/oh-my-zsh/plugins
-  fresh zshrc/oh-my-zsh/custom
-  fresh zshrc/oh-my-zsh/load
+  # prezto
+  fresh sorin-ionescu/prezto runcoms/zshrc
   # other
   fresh https://bitbucket.org/akatov/private.git zshrc/default
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
