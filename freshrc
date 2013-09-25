@@ -58,8 +58,10 @@ fresh-options --file=~/.zshrc --marker --ignore-missing
   fresh zshrc/dedup-path
 fresh-options
 
+#################### END ZSH SETUP ####################
+
 # leiningen
-fresh akatov/leinfiles . --file=~/.lein/ --ref=2c434b513a1665fa9af9c4af8fcaf61b798feca6 # TODO: remove ref and change to cldwalker/leinfiles once PR is merged
+fresh lein --file=~/.lein/
 
 # gitconfig
 fresh-options --file=~/.gitconfig --marker --ignore-missing
