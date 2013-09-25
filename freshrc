@@ -8,6 +8,7 @@ fresh akatov/fresh-profile bin/fresh-profile --bin
 # ~/bin
 fresh bin/emacsq --bin
 fresh https://gist.github.com/1209316.git gitio --bin
+fresh twe4ked/dotfiles bin/gh --bin
 
 # cask
 fresh rejeep/cask.el . --file=~/.cask/
