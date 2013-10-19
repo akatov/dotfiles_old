@@ -7,6 +7,7 @@ fresh akatov/fresh-profile bin/fresh-profile --bin
 
 # ~/bin
 fresh bin/emacsq --bin
+fresh bin/currency_convert --bin
 fresh https://gist.github.com/1209316.git gitio --bin
 fresh twe4ked/dotfiles bin/gh --bin
 
