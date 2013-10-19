@@ -20,6 +20,8 @@ fresh https://bitbucket.org/akatov/private.git profiles/$PROFILE --ignore-missin
 fresh shell/\*
 fresh https://bitbucket.org/akatov/private.git shell/\*
 
+#################### ZSH SETUP ####################
+
 # prezto
 fresh sorin-ionescu/prezto . --file=~/.zprezto/
 fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
@@ -46,6 +48,9 @@ fresh sorin-ionescu/prezto runcoms/zlogout --file
 
 # completion
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
+
+# prompt
+fresh zshrc/prompt --file=prompt/
 
 # zshrc
 fresh-options --file=~/.zshrc --marker --ignore-missing
