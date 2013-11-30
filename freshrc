@@ -11,9 +11,6 @@ fresh bin/currency_convert --bin
 fresh https://gist.github.com/1209316.git gitio --bin
 fresh twe4ked/dotfiles bin/gh --bin
 
-# cask
-fresh rejeep/cask.el . --file=~/.cask/
-
 # shell
 fresh freshshell/fresh-open shell/cdf.sh
 fresh profiles/$PROFILE --ignore-missing
