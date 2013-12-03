@@ -1,5 +1,5 @@
 # default profile
-[ -z "$PROFILE" ] && PROFILE="personal"
+PROFILE="${PROFILE:-personal}"
 
 # fresh
 fresh freshshell/fresh bin/fresh --bin
