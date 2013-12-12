@@ -27,6 +27,7 @@ fresh https://bitbucket.org/akatov/private.git shell/\*
 fresh sorin-ionescu/prezto . --file=~/.zprezto/
 fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
 fresh zsh-users/zsh-syntax-highlighting . --file=zprezto/modules/syntax-highlighting/external/
+fresh zsh-users/zaw . --file=~/.zaw/
 
 # zpreztorc
 fresh-options --file=~/.zpreztorc --marker --ignore-missing
@@ -62,6 +63,7 @@ fresh-options --file=~/.zshrc --marker --ignore-missing
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
   fresh freshshell/fresh contrib/source-build.sh
   fresh zshrc/dedup-path
+  fresh zshrc/zaw
 fresh-options
 
 #################### END ZSH SETUP ####################
