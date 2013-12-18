@@ -18,7 +18,7 @@ fresh twe4ked/dotfiles bin/gh --bin
 fresh freshshell/fresh-open shell/cdf.sh
 fresh profiles/$PROFILE --ignore-missing
 fresh https://bitbucket.org/akatov/private.git profiles/$PROFILE --ignore-missing
-fresh shell/\*
+fresh shell/\* # in alphabetical order
 fresh https://bitbucket.org/akatov/private.git shell/\*
 
 #################### ZSH SETUP ####################
