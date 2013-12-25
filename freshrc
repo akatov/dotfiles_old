@@ -1,5 +1,12 @@
-# default profile
-PROFILE="${PROFILE:-personal}"
+# profile stuff
+FRESH_PROFILE="${FRESH_PROFILE:-}"
+echo "export FRESH_PROFILE=\"$FRESH_PROFILE\"" > $FRESH_LOCAL/fresh_profile
+profile_work="personal"
+for e in $FRESH_PROFILE; do
+  key="${e%%:*}"
+  val="${e##*:}"
+  [[ $key == "work" ]] && profile_work=$val
+done
 
 # fresh
 fresh freshshell/fresh bin/fresh --bin
@@ -15,9 +22,8 @@ fresh https://gist.github.com/1209316.git gitio --bin
 fresh twe4ked/dotfiles bin/gh --bin
 
 # shell
+fresh fresh_profile
 fresh freshshell/fresh-open shell/cdf.sh
-fresh profiles/$PROFILE --ignore-missing
-fresh https://bitbucket.org/akatov/private.git profiles/$PROFILE --ignore-missing
 fresh shell/\* # in alphabetical order
 fresh https://bitbucket.org/akatov/private.git shell/\*
 
@@ -78,7 +84,7 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh gitconfig/push
   fresh gitconfig/credential
   fresh https://bitbucket.org/akatov/private.git gitconfig/default
-  fresh https://bitbucket.org/akatov/private.git gitconfig/$PROFILE
+  fresh https://bitbucket.org/akatov/private.git gitconfig/$profile_work
 fresh-options
 
 # tmux.conf
@@ -114,7 +120,7 @@ fresh rdebugrc --file
 fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
 
 # s3cfg
-fresh https://bitbucket.org/akatov/private.git s3cfg/$PROFILE --file=~/.s3cfg --ignore-missing
+fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3cfg --ignore-missing
 
 # Divvy
 fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
