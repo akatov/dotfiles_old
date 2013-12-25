@@ -2,10 +2,12 @@
 FRESH_PROFILE="${FRESH_PROFILE:-}"
 echo "export FRESH_PROFILE=\"$FRESH_PROFILE\"" > $FRESH_LOCAL/fresh_profile
 profile_work="personal"
+profile_emacs="cask"
 for e in $FRESH_PROFILE; do
   key="${e%%:*}"
   val="${e##*:}"
   [[ $key == "work" ]] && profile_work=$val
+  [[ $key == "emacs" ]] && profile_emacs=$val
 done
 
 # fresh
@@ -124,3 +126,7 @@ fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3c
 
 # Divvy
 fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
+
+# Emacs
+[ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
+ln -sf $FRESH_LOCAL/emacs.d/$profile_emacs ~/.emacs.d
