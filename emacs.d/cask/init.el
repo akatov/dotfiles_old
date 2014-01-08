@@ -26,3 +26,32 @@
 ;; load packages through Cask
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
+
+;; load hooks
+(defun add-hooks (mode-hooks hooks)
+  (loop for mode-hook in mode-hooks do
+        (loop for hook in hooks do
+              (add-hook mode-hook hook))))
+(mapc (lambda (f) (load f)) (f-files "~/.emacs.d/hooks"))
+
+;; START gtd
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
+(setq org-agenda-files
+      (list "~/org/gtd/gtd.org"
+            "~/org/gtd/work.org"
+            "~/org/gtd/personal.org"))
+
+(setq org-return-follows-link t)
+
+(setq org-agenda-custom-commands
+      '(("w" todo "WAITING" nil)
+        ("n" todo "NEXT" nil)
+        ("d" "Agenda + Next Actions" ((agenda) (todo "NEXT")))))
+
+(defun gtd ()
+  (interactive)
+  (find-file "~/org/gtd/gtd.org"))
+;; END gtd
