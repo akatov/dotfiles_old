@@ -18,4 +18,4 @@
  '(turn-on-eldoc-mode
    setup-eval-print-last-sexp))
 
-(add-to-list 'auto-mode-alist '("Carton" . emacs-lisp-mode))
+(add-to-list 'auto-mode-alist '("Cask" . emacs-lisp-mode))
