@@ -19,6 +19,8 @@
    nil 'fullscreen (unless (frame-parameter nil 'fullscreen) 'fullboth)))
 (global-set-key (kbd "s-<return>") 'toggle-fullscreen)
 
+(ido-mode 'buffers)
+
 ;; load custom
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
