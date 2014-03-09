@@ -3,3 +3,5 @@ auto-save-list
 *.elc
 url
 ac-comphist.dat
+elnode
+emms
