@@ -11,7 +11,6 @@
            [lein-midje "3.0.0"]
            ]
  :dependencies [[table "0.4.0"]
-                [desc "0.1.0"]
                 [rubydoc "0.4.0"]
                 ]
  :repl-options ^:displace
