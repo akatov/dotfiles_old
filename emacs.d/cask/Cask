@@ -2,6 +2,7 @@
 (source SC)
 (source org)
 
+(depends-on "4clojure")
 (depends-on "ac-nrepl")
 (depends-on "ace-jump-buffer")
 (depends-on "ace-jump-mode")
@@ -102,6 +103,7 @@
 (depends-on "vcl-mode")
 (depends-on "web")
 (depends-on "wrap-region")
+(depends-on "xkcd")
 (depends-on "yaml-mode")
 (depends-on "yard-mode")
 (depends-on "yasnippet")
