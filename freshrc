@@ -21,6 +21,9 @@ fresh akatov/fresh-profile bin/fresh-profile --bin
 fresh bin/emacsq --bin
 fresh bin/currency_convert --bin
 fresh bin/firefox --bin
+fresh bin/E --bin
+fresh bin/EC --bin
+fresh bin/ES --bin
 fresh https://gist.github.com/1209316.git gitio --bin
 fresh twe4ked/dotfiles bin/gh --bin
 
