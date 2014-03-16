@@ -1,7 +1,12 @@
 Pry.config.disable_auto_reload = true
 Pry.config.should_load_plugins = false
 
-require 'pry-doc'
+begin
+  require 'pry-doc'
+rescue LoadError => err
+  warn "Couldn't load pry-doc: #{err}"
+  warn "you may want to run `gem install pry-doc'"
+end
 
 main_prompt = proc { |target_self, nest_level, pry|
   env = case ENV['RAILS_ENV']
