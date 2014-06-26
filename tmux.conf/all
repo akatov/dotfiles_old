@@ -30,8 +30,9 @@ bind b set-option status
 
 bind / command-prompt "split-window 'exec man %%'"
 # vim's definition of a horizontal/vertical split is reversed from tmux's
-bind s split-window -v
-bind v split-window -h
+bind s split-window -v -c "#{pane_current_path}"
+bind v split-window -h -c "#{pane_current_path}"
+bind c new-window -c "#{pane_current_path}"
 
 # move around panes with hjkl, as one would in vim after pressing ctrl-w
 bind h select-pane -L
