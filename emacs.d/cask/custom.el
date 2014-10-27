@@ -35,6 +35,7 @@
  '(mouse-wheel-scroll-amount (quote ((nil . 1) ((control) . 3) ((shift) . 5) ((control shift) . 7) ((meta) . 9) ((meta control) . 11) ((meta shift) . 13) ((meta shift control) . 1.0))))
  '(org-babel-load-languages (quote ((haskell . t) (js . t) (ruby . t) (clojure . t) (sh . t))))
  '(scroll-bar-mode (quote right))
+ '(scss-compile-at-save nil)
  '(sh-indentation 2)
  '(show-paren-delay 0)
  '(show-paren-mode t)
