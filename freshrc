@@ -18,6 +18,8 @@ fresh freshshell/fresh-open bin/fresh-open --bin
 fresh akatov/fresh-profile bin/fresh-profile --bin
 
 # ~/bin
+fresh bin/chrome --bin
+fresh bin/dropbox --bin
 fresh bin/emacsq --bin
 fresh bin/currency_convert --bin
 fresh bin/firefox --bin
