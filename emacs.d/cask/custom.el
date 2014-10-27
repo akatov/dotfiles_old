@@ -22,7 +22,7 @@
  '(inferior-js-program-command "~/.nvm/v0.10.32/bin/node")
  '(inhibit-startup-screen t)
  '(initial-frame-alist (quote ((vertical-scroll-bars . right))))
- '(js-indent-level 4)
+ '(js-indent-level 2)
  '(js2-basic-offset 2)
  '(js2-global-externs (quote (quote ("module" "require" "buster" "sinon" "assert" "refute" "setTimeout" "clearTimeout" "setInterval" "clearInterval" "location" "__dirname" "console" "JSON" "angular"))))
  '(js2-include-browser-externs t)
