@@ -19,6 +19,7 @@
  '(global-hl-line-sticky-flag t)
  '(global-linum-mode nil)
  '(indent-tabs-mode nil)
+ '(inferior-js-program-command "~/.nvm/v0.10.32/bin/node")
  '(inhibit-startup-screen t)
  '(initial-frame-alist (quote ((vertical-scroll-bars . right))))
  '(js-indent-level 4)
