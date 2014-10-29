@@ -1,9 +1,9 @@
+(source gnu)
 (source melpa)
 (source SC)
 (source org)
 
 (depends-on "4clojure")
-(depends-on "ac-nrepl")
 (depends-on "ace-jump-buffer")
 (depends-on "ace-jump-mode")
 (depends-on "ag")
