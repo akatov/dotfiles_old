@@ -1,3 +1,5 @@
+(setq exec-path (append exec-path '("/usr/local/bin")))
+
 ;; always ask y-or-n questions
 (fset 'yes-or-no-p 'y-or-n-p)
 
