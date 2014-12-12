@@ -25,10 +25,6 @@
   (define-key clojure-mode-map "{" 'paredit-open-curly)
   (define-key clojure-mode-map "}" 'paredit-close-curly))
 
-;; (defun activate-js2-paredit-curly ()
-;;   (define-key js2-mode-map "{" 'paredit-open-curly)
-;;   (define-key js2-mode-map "}" 'paredit-close-curly))
-
 (defun setup-paredit-eldoc-commands ()
   (turn-on-eldoc-mode)
   (eldoc-add-command 'paredit-backward-delete
@@ -36,7 +32,6 @@
                      'electrify-return-if-match))
 
 (add-hook 'clojure-mode-hook 'activate-clojure-paredit-curly)
-;;(add-hook 'js2-mode-hook 'activate-js2-paredit-curly)
 
 (add-hooks '(emacs-lisp-mode-hook)
            '(activate-electrify-return
@@ -50,3 +45,23 @@
    lisp-mode-hook
    scheme-mode-hook)
  '(enable-paredit-mode))
+
+;;; paredit for javascript
+
+(defun my-paredit-nonlisp ()
+  "Turn on paredit mode for non-lisps."
+  (interactive)
+  (set (make-local-variable 'paredit-space-for-delimiter-predicates)
+       '((lambda (endp delimiter) nil)))
+  (paredit-mode 1))
+
+(defun activate-js2-paredit-curly ()
+  (define-key js2-mode-map "{" 'paredit-open-curly)
+  (define-key js2-mode-map "}" 'paredit-close-curly))
+
+(add-hook 'js2-mode-hook 'activate-js2-paredit-curly)
+
+(add-hooks
+ '(js-mode-hook js2-mode-hook)
+ '(my-paredit-nonlisp))
+
