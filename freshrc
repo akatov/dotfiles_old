@@ -136,3 +136,6 @@ fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
 # Emacs
 [ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
 ln -sf $FRESH_LOCAL/emacs.d/$profile_emacs ~/.emacs.d
+
+# exercism.io
+fresh https://bitbucket.org/akatov/private.git exercism.json --file
