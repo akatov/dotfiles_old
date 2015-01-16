@@ -97,7 +97,7 @@ fresh-options
 
 # tmux.conf
 fresh-options --file=~/.tmux.conf --marker
-  fresh tmux.conf/all
+  fresh tmux.conf/\*
 fresh-options
 
 # ghci
