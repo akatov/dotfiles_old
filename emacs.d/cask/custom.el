@@ -61,6 +61,7 @@
      (ruby . t)
      (clojure . t)
      (sh . t))))
+ '(pallet-mode t)
  '(scroll-bar-mode (quote right))
  '(scss-compile-at-save nil)
  '(sh-indentation 2)
