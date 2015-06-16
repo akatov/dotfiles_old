@@ -4,5 +4,5 @@ if [[ $OS == Linux ]]; then
 fi
 
 if [[ $OS == Darwin ]]; then
-  /usr/libexec/java_home >/dev/null && export JAVA_HOME="$(/usr/libexec/java_home)"
+  /usr/libexec/java_home &>/dev/null && export JAVA_HOME="$(/usr/libexec/java_home)"
 fi
