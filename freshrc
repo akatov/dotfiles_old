@@ -125,7 +125,7 @@ fresh csshrc --file
 fresh rdebugrc --file
 
 # yi
-fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
+# fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
 
 # s3cfg
 fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3cfg --ignore-missing
