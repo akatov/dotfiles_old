@@ -1,3 +1,0 @@
-#!/usr/bin/env zsh
-
-DYLD_INSERT_LIBRARIES=/Applications/Dropbox.app/Contents/dropbox_inj.dylib /Applications/Dropbox.app/Contents/MacOS/Dropbox &
