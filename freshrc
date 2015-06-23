@@ -21,14 +21,9 @@ fresh freshshell/fresh-open bin/fresh-open --bin
 fresh akatov/fresh-profile bin/fresh-profile --bin
 
 # ~/bin
-fresh bin/chrome --bin
-fresh bin/dropbox --bin
-fresh bin/emacsq --bin
-fresh bin/currency_convert --bin
-fresh bin/firefox --bin
-fresh bin/E --bin
-fresh bin/EC --bin
-fresh bin/ES --bin
+for s in bin/*; do
+  fresh $s --bin
+done
 fresh https://gist.github.com/1209316.git gitio --bin
 fresh twe4ked/dotfiles bin/ghu --bin
 
