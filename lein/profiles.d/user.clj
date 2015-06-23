@@ -9,6 +9,7 @@
            [lein-pprint "1.1.1"]
            [org.conjure/lein-conjure "1.0.0"]
            [lein-midje "3.0.0"]
+	   [lein-immutant "2.0.0"]
            ]
  :dependencies [[table "0.4.0"]
                 [rubydoc "0.4.0"]
