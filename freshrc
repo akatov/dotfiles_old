@@ -76,6 +76,7 @@ fresh-options --file=~/.zshrc --marker --ignore-missing
   fresh freshshell/fresh contrib/source-build.sh
   fresh zshrc/dedup-path
   fresh zshrc/zaw
+  fresh zshrc/pyenv
 fresh-options
 
 #################### END ZSH SETUP ####################
