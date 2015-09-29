@@ -11,6 +11,7 @@ for e in $FRESH_PROFILE; do
   val="${e##*:}"
   [[ $key == "work" ]] && profile_work=$val
   [[ $key == "emacs" ]] && profile_emacs=$val
+  [[ $key == "aws" ]] && profile_aws=$val
 done
 
 # fresh
@@ -32,6 +33,7 @@ fresh fresh_profile
 fresh freshshell/fresh-open shell/cdf.sh
 fresh shell/\* # in alphabetical order
 fresh https://bitbucket.org/akatov/private.git shell/\*
+fresh https://bitbucket.org/akatov/private.git shell/aws/$profile_aws
 fresh https://gist.github.com/9c2f547434b7d78d1b62.git explain.sh
 
 #################### ZSH SETUP ####################
