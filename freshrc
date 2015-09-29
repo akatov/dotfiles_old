@@ -135,6 +135,14 @@ fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3c
 # Divvy
 fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
 
+## Emacsen.
+
+# Spacemacs
+fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore
+
+# Emacs-Live
+fresh overtone/emacs-live init.el --file=~/.tmp/ignore
+
 # Emacs
 [ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
 ln -sf $FRESH_LOCAL/emacs.d/$profile_emacs ~/.emacs.d
