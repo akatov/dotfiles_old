@@ -6,6 +6,7 @@
   ca  = commit -v -a
   cl  = clone
   cm  = checkout master
+  cd  = checkout develop
   co  = checkout
   cp  = cherry-pick
   d   = diff --color
