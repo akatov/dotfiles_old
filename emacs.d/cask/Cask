@@ -31,6 +31,7 @@
 (depends-on "epl")
 (depends-on "esup")
 (depends-on "esxml")
+(depends-on "exec-path-from-shell")
 (depends-on "expand-region")
 (depends-on "f")
 (depends-on "fakir")
