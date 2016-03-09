@@ -41,3 +41,6 @@
 (mapc (lambda (f) (load f)) (f-files "~/.emacs.d/private"))
 
 (setq inferior-js-program-command "node")
+
+(when (memq window-system '(ns))
+  (exec-path-from-shell-initialize))
