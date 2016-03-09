@@ -21,6 +21,7 @@
  '(global-hl-line-mode nil)
  '(global-hl-line-sticky-flag t)
  '(global-linum-mode nil)
+ '(global-wakatime-mode nil)
  '(indent-tabs-mode nil)
  '(inferior-js-program-command "~/.nvm/v0.10.32/bin/node" t)
  '(inhibit-startup-screen t)
@@ -72,6 +73,7 @@
  '(stack-trace-on-error t)
  '(tab-width 2)
  '(tool-bar-mode nil)
+ '(wakatime-cli-path "~/.pyenv/shims/wakatime")
  '(xterm-mouse-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
