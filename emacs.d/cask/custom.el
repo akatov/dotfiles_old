@@ -73,6 +73,7 @@
  '(stack-trace-on-error t)
  '(tab-width 2)
  '(tool-bar-mode nil)
+ '(visible-bell nil)
  '(wakatime-cli-path "~/.pyenv/shims/wakatime")
  '(xterm-mouse-mode t))
 (custom-set-faces
