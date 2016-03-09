@@ -15,6 +15,7 @@
    (quote
     ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "1e7e097ec8cb1f8c3a912d7e1e0331caeed49fef6cff220be63bd2a6ba4cc365" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" "4c9ba94db23a0a3dea88ee80f41d9478c151b07cb6640b33bfc38be7c2415cc4" default)))
  '(custom-theme-directory "~/.emacs.d/themes/")
+ '(exec-path-from-shell-variables (quote ("PATH" "MANPATH" "GOPATH" "MAVEN_OPTS")))
  '(fill-column 80)
  '(foreground-color "#708183")
  '(global-hl-line-mode nil)
