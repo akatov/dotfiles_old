@@ -1,3 +1,7 @@
+;; load packages through Cask
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
 ;; always ask y-or-n questions
@@ -26,10 +30,6 @@
 ;; load custom
 (setq custom-file "~/.emacs.d/custom.el")
 (load custom-file 'noerror)
-
-;; load packages through Cask
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
 
 ;; load hooks
 (defun add-hooks (mode-hooks hooks)
