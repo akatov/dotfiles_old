@@ -1,7 +1,6 @@
-;; load packages through Cask
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
-(require 'pallet)
+;; load the config
+(org-babel-load-file
+ (concat user-emacs-directory "config.org"))
 
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
