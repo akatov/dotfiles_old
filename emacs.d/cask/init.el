@@ -17,6 +17,4 @@
               (add-hook mode-hook hook))))
 (mapc (lambda (f) (load f)) (f-files "~/.emacs.d/hooks"))
 
-(mapc (lambda (f) (load f)) (f-files "~/.emacs.d/private"))
-
 (setq inferior-js-program-command "node")
