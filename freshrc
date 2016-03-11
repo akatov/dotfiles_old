@@ -140,11 +140,19 @@ fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
 
 ## Emacsen.
 
+# we need the actual git clone, but fresh wants at least one file linked...
+
 # Spacemacs
-fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore
+fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore-me
 
 # Emacs-Live
-fresh overtone/emacs-live init.el --file=~/.tmp/ignore
+fresh overtone/emacs-live init.el --file=~/.tmp/ignore-me
+
+# Rejeep
+fresh rejeep/emacs.git init.el --file=~/.tmp/ignore-me
+
+# Daniel Mai
+fresh danielmai/.emacs.d init.el --file=~/.tmp/ignore-me
 
 # Emacs
 [ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
