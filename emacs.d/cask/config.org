@@ -59,16 +59,14 @@ I only like ido-mode for switching buffers.
 Some global keybindings I like to use...
 
 #+BEGIN_SRC emacs-lisp
-(bind-keys :prefix-map my-meta-g-map
-           :prefix "M-g"
-           ("h" . windmove-left)
-           ("M-h" . windmove-left)
-           ("l" . windmove-right)
-           ("M-l" . windmove-right)
-           ("k" . windmove-up)
-           ("M-k" . windmove-up)
-           ("j" . windmove-down)
-           ("M-j" . windmove-down))
+(bind-keys ("M-g h" . windmove-left)
+           ("M-g j" . windmove-down)
+           ("M-g k" . windmove-up)
+           ("M-g l" . windmove-right)
+           ("M-g M-h" . windmove-left)
+           ("M-g M-j" . windmove-down)
+           ("M-g M-k" . windmove-up)
+           ("M-g M-l" . windmove-right))
 (bind-key "<s-return>" 'toggle-frame-fullscreen)
 #+END_SRC
 
