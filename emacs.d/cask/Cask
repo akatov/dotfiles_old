@@ -126,6 +126,7 @@
 (depends-on "sws-mode")
 (depends-on "textmate")
 (depends-on "tuareg")
+(depends-on "use-package")
 (depends-on "vcl-mode")
 (depends-on "wakatime-mode")
 (depends-on "web")
