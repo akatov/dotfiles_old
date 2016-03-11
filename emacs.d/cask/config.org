@@ -96,6 +96,7 @@ I keep them in a separate private repo.
 
 #+BEGIN_SRC emacs-lisp
 (use-package ace-jump-mode
+  :ensure t
   :bind (("C-;" . ace-jump-mode)
          ("C-c SPC" . ace-jump-mode)
          ("C-c C-SPC" . ace-jump-mode)))
