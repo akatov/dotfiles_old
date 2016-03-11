@@ -94,6 +94,15 @@ I keep them in a separate private repo.
 
 * Package Config
 
+** Ace-Jump
+
+#+BEGIN_SRC emacs-lisp
+(use-package ace-jump-mode
+  :bind (("C-;" . ace-jump-mode)
+         ("C-c SPC" . ace-jump-mode)
+         ("C-c C-SPC" . ace-jump-mode)))
+#+END_SRC
+
 * Temp
 
 These definitions are looking to be moved somewhere else.
