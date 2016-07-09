@@ -3,7 +3,7 @@
            [lein-difftest "2.0.0"]
            [lein-exec "0.3.6"]
            [lein-grep "0.1.1"]
-           [lein-light "0.0.4"]
+           [lein-light "0.0.44"]
            [lein-open "0.1.1"]
            [lein-ring "0.9.7"]
            [lein-ancient "0.6.10"]
