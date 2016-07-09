@@ -1,1 +1,1 @@
-{:dependencies [[lacij "0.8.1"]]}
+{:dependencies [[lacij "0.9.0"]]}
