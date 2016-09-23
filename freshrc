@@ -129,6 +129,9 @@ fresh csshrc --file
 # rdebugrc
 fresh rdebugrc --file
 
+# asdf
+fresh asdfrc --file
+
 # yi
 # fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
 
