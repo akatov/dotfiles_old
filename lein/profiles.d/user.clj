@@ -1,4 +1,5 @@
 {:plugins [[lein-clojars "0.9.1"]
+	   [org.conjure/lein-conjure "1.0.0"]
            [lein-ns-dep-graph "0.1.0-SNAPSHOT"]
            [lein-difftest "2.0.0"]
            [lein-exec "0.3.6"]
