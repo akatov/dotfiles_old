@@ -1,0 +1,8 @@
+# Emacs
+.#*
+
+# Resilio Sync
+*.rslsd
+*.rslsc
+*.rslsi
+*.rsls

@@ -92,7 +92,10 @@ fresh-options
 fresh lein --file=~/.lein/
 
 # gitconfig
+fresh gitignore_global --file
+
 fresh-options --file=~/.gitconfig --marker --ignore-missing
+  fresh gitconfig/core
   fresh gitconfig/user
   fresh gitconfig/alias
   fresh gitconfig/push
