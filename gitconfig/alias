@@ -29,3 +29,6 @@
   ss  = status -s
   st  = status
   up  = pull --rebase
+  bb = repo bb
+  hub = repo hub
+  lab = repo lab
