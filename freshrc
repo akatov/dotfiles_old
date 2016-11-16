@@ -76,6 +76,7 @@ fresh zshrc/prompt --file=prompt/
 fresh-options --file=~/.zshrc --marker --ignore-missing
   # prezto
   fresh sorin-ionescu/prezto runcoms/zshrc
+  fresh zshrc/setopt
   # other
   fresh https://bitbucket.org/akatov/private.git zshrc/default
   fresh twe4ked/dotfiles shell/zsh/completion.zsh
