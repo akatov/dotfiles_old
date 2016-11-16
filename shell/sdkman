@@ -1,2 +1,4 @@
-export SDKMAN_DIR="/Users/akatov/.sdkman"
-[[ -s "/Users/akatov/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/akatov/.sdkman/bin/sdkman-init.sh"
+if [ -s "/Users/akatov/.sdkman/bin/sdkman-init.sh" ]; then
+  export SDKMAN_DIR="/Users/akatov/.sdkman"
+  source "/Users/akatov/.sdkman/bin/sdkman-init.sh"
+fi
