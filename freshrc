@@ -161,6 +161,12 @@ fresh rejeep/emacs.git init.el --file=~/.tmp/ignore-me
 # Daniel Mai
 fresh danielmai/.emacs.d init.el --file=~/.tmp/ignore-me
 
+# ohai-emacs
+fresh bodil/ohai-emacs init.el --file=~/.tmp/ignore-me
+
+# Philip Potter
+fresh philandstuff/dot-emacs init.el --file=~/.tmp/ignore-me
+
 # Emacs
 [ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
 ln -sf $FRESH_LOCAL/emacs.d/$profile_emacs ~/.emacs.d
