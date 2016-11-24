@@ -149,6 +149,9 @@ fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
 
 # we need the actual git clone, but fresh wants at least one file linked...
 
+# My own
+fresh akatov/emacs.d init.el --file=~/.tmp/ignore-me
+
 # Spacemacs
 fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore-me
 
@@ -156,7 +159,7 @@ fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore-me
 fresh overtone/emacs-live init.el --file=~/.tmp/ignore-me
 
 # Rejeep
-fresh rejeep/emacs.git init.el --file=~/.tmp/ignore-me
+fresh rejeep/emacs init.el --file=~/.tmp/ignore-me
 
 # Daniel Mai
 fresh danielmai/.emacs.d init.el --file=~/.tmp/ignore-me
@@ -168,8 +171,12 @@ fresh bodil/ohai-emacs init.el --file=~/.tmp/ignore-me
 fresh philandstuff/dot-emacs init.el --file=~/.tmp/ignore-me
 
 # Emacs
-[ -d ~/.emacs.d ] && rm -rf ~/.emacs.d
-ln -sf $FRESH_LOCAL/emacs.d/$profile_emacs ~/.emacs.d
+if [ -e ~/.emacs.d ] && [ ! -L ~/.emacs.d ]; then
+  echo "~/.emacs.d is not a symbolic link. Not touching it..."
+else
+  rm -rf ~/.emacs.d
+  ln -sf $FRESH_PATH/source/$profile_emacs ~/.emacs.d
+fi
 
 # exercism.io
 fresh https://bitbucket.org/akatov/private.git exercism.json --file
