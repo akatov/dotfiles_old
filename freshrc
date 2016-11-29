@@ -158,6 +158,12 @@ fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore-me
 # Emacs-Live
 fresh overtone/emacs-live init.el --file=~/.tmp/ignore-me
 
+# John Wiegley
+fresh jwiegley/dot-emacs init.el --file=~/.tmp/ignore-me
+
+# Seth Falcon
+fresh seth/my-emacs-dot-d init.el --file=~/.tmp/ignore-me
+
 # Rejeep
 fresh rejeep/emacs init.el --file=~/.tmp/ignore-me
 
