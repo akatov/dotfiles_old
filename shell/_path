@@ -4,11 +4,12 @@ for p in \
   /usr/sbin \
   /sbin \
   /usr/X11/bin \
-  /usr/local/opt/coreutils/libexec/gnubin \
   /usr/local/sbin \
   /usr/local/bin \
   /opt/local/sbin \
   /opt/local/bin \
+  /usr/local/opt/coreutils/libexec/gnubin \
+  /usr/local/opt/tcl-tk/bin \
 
 do
   export PATH="$p:$PATH"
