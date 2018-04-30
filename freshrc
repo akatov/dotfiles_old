@@ -84,6 +84,7 @@ fresh-options --file=~/.zshrc --marker --ignore-missing
   fresh zshrc/dedup-path
   fresh zshrc/zaw
   fresh zshrc/pyenv
+  fresh zshrc/direnv
 fresh-options
 
 #################### END ZSH SETUP ####################
