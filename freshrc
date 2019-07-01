@@ -136,6 +136,7 @@ fresh rdebugrc --file
 
 # asdf
 fresh asdfrc --file
+fresh default-npm-packages --file
 
 # yi
 # fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
