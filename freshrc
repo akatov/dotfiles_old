@@ -155,7 +155,7 @@ fresh git@gitlab.com:akatov/private.git emacs.org --file=~/.config/private-emacs
 # we need the actual git clone, but fresh wants at least one file linked...
 
 # My own
-fresh akatov/emacs.d init.el --file=~/.tmp/ignore-me
+fresh akatov/akamacs init.el --file=~/.tmp/ignore-me
 
 # Spacemacs
 fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore-me
