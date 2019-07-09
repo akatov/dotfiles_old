@@ -149,6 +149,8 @@ fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
 
 ## Emacsen.
 
+fresh emacs --file
+
 # private emacs settings
 fresh git@gitlab.com:akatov/private.git emacs.org --file=~/.config/private-emacs.org
 
@@ -194,3 +196,5 @@ fresh https://bitbucket.org/akatov/private.git exercism.json --file
 
 # floorc
 fresh https://bitbucket.org/akatov/private.git floorc.json --file
+
+export PATH="${FRESH_BIN_PATH}:${PATH}"
