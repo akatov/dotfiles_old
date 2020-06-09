@@ -10,7 +10,7 @@ set -g prefix C-q
 bind C-y paste-buffer
 bind ] run "tmux save-buffer - | reattach-to-user-namespace pbcopy"
 
-setw -g window-status-current-bg blue
+setw -g window-status-current-style bg=blue
 setw -g automatic-rename on
 set -g history-limit 100000
 set -g base-index 1
