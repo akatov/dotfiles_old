@@ -1,10 +1,13 @@
 npm
-mocha
-ember-cli
+yarn
+iron-node
 typescript
 ts-node
+mocha
 expo-cli
-iron-node
+react-native
 purescript
-pulp
-bower
+spago
+# pulp
+# bower
+# ember-cli
