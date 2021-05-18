@@ -102,9 +102,6 @@ fresh-options
 # s3cfg
 fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3cfg --ignore-missing
 
-# Divvy
-fresh divvy --file=~/Library/Preferences/com.mizage.Divvy.plist
-
 ## Emacsen.
 
 # private emacs settings
