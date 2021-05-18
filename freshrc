@@ -91,11 +91,6 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh https://bitbucket.org/akatov/private.git gitconfig/$profile_work
 fresh-options
 
-# tmux.conf
-fresh-options --file=~/.tmux.conf --marker
-  fresh tmux.conf/\*
-fresh-options
-
 # yi
 # fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
 
