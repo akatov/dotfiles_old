@@ -24,10 +24,6 @@ fresh akatov/fresh-profile bin/fresh-profile --bin
 # other bin
 fresh dsanson/termpdf termpdf --bin
 
-# ~/bin
-for s in bin/*; do
-  fresh $s --bin
-done
 fresh https://gist.github.com/1209316.git gitio --bin
 fresh twe4ked/dotfiles bin/ghu --bin
 
