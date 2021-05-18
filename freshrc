@@ -96,10 +96,6 @@ fresh-options --file=~/.tmux.conf --marker
   fresh tmux.conf/\*
 fresh-options
 
-# asdf
-fresh asdfrc --file
-fresh default-npm-packages --file
-
 # yi
 # fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
 
