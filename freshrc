@@ -96,9 +96,6 @@ fresh-options --file=~/.tmux.conf --marker
   fresh tmux.conf/\*
 fresh-options
 
-# irbrc
-fresh irbrc --file
-
 # pryrc
 fresh pryrc --file
 
