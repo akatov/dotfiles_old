@@ -79,9 +79,6 @@ fresh-options
 
 #################### END ZSH SETUP ####################
 
-# leiningen
-fresh lein --file=~/.lein/
-
 # gitconfig
 fresh gitignore_global --file
 
