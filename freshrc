@@ -96,9 +96,6 @@ fresh-options --file=~/.tmux.conf --marker
   fresh tmux.conf/\*
 fresh-options
 
-# ackrc
-fresh ackrc --file
-
 # mongorc.js
 fresh mongorc.js --file
 
