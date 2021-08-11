@@ -91,9 +91,6 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh https://bitbucket.org/akatov/private.git gitconfig/$profile_work
 fresh-options
 
-# yi
-# fresh yi-editor/yi yi/example-configs/yi.hs --file=~/.config/yi/yi.hs
-
 # s3cfg
 fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3cfg --ignore-missing
 
