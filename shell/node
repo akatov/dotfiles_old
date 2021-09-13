@@ -1,2 +1,0 @@
-[ -r ~/.nvm/nvm.sh ] && source ~/.nvm/nvm.sh
-[ -r ~/.nvm/bash_completion ] && source ~/.nvm/bash_completion
