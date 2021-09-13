@@ -25,8 +25,8 @@ fresh akatov/fresh-profile bin/fresh-profile --bin
 fresh fresh_profile
 fresh freshshell/fresh-open shell/cdf.sh
 # fresh shell/\* # in alphabetical order
-fresh https://bitbucket.org/akatov/private.git shell/\*
-fresh https://bitbucket.org/akatov/private.git shell/aws/$profile_aws
+# fresh https://bitbucket.org/akatov/private.git shell/\*
+# fresh https://bitbucket.org/akatov/private.git shell/aws/$profile_aws
 fresh https://gist.github.com/9c2f547434b7d78d1b62.git explain.sh
 
 #################### ZSH SETUP ####################
