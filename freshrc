@@ -67,9 +67,6 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh https://bitbucket.org/akatov/private.git gitconfig/personal
 fresh-options
 
-# s3cfg
-fresh https://bitbucket.org/akatov/private.git s3cfg/personal --file=~/.s3cfg --ignore-missing
-
 ## Emacsen.
 
 # private emacs settings
