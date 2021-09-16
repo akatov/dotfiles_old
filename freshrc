@@ -112,7 +112,4 @@ else
   ln -sf $FRESH_PATH/source/akatov/akamacs ~/.emacs.d
 fi
 
-# exercism.io
-fresh https://bitbucket.org/akatov/private.git exercism.json --file
-
 export PATH="${FRESH_BIN_PATH}:${PATH}"
