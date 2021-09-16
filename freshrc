@@ -115,7 +115,4 @@ fi
 # exercism.io
 fresh https://bitbucket.org/akatov/private.git exercism.json --file
 
-# floorc
-fresh https://bitbucket.org/akatov/private.git floorc.json --file
-
 export PATH="${FRESH_BIN_PATH}:${PATH}"
