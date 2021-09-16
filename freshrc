@@ -1,32 +1,17 @@
 # fresh stuff
 FRESH_BIN_PATH=$HOME/.bin
 
-# profile stuff
-FRESH_PROFILE="${FRESH_PROFILE:-}"
-echo "export FRESH_PROFILE=\"$FRESH_PROFILE\"" > $FRESH_LOCAL/fresh_profile
-profile_work="personal"
-profile_emacs="cask"
-for e in $FRESH_PROFILE; do
-  key="${e%%:*}"
-  val="${e##*:}"
-  [[ $key == "work" ]] && profile_work=$val
-  [[ $key == "emacs" ]] && profile_emacs=$val
-  [[ $key == "aws" ]] && profile_aws=$val
-done
-
 # fresh
 fresh freshshell/fresh bin/fresh --bin
 
 # fresh plugins
 fresh freshshell/fresh-open bin/fresh-open --bin
-fresh akatov/fresh-profile bin/fresh-profile --bin
 
 # shell
-fresh fresh_profile
 fresh freshshell/fresh-open shell/cdf.sh
 # fresh shell/\* # in alphabetical order
 # fresh https://bitbucket.org/akatov/private.git shell/\*
-# fresh https://bitbucket.org/akatov/private.git shell/aws/$profile_aws
+# fresh https://bitbucket.org/akatov/private.git shell/aws/tallarium
 # fresh https://gist.github.com/9c2f547434b7d78d1b62.git explain.sh
 
 #################### ZSH SETUP ####################
@@ -89,11 +74,11 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh gitconfig/push
   fresh gitconfig/credential
   fresh https://bitbucket.org/akatov/private.git gitconfig/default
-  fresh https://bitbucket.org/akatov/private.git gitconfig/$profile_work
+  fresh https://bitbucket.org/akatov/private.git gitconfig/personal
 fresh-options
 
 # s3cfg
-fresh https://bitbucket.org/akatov/private.git s3cfg/$profile_work --file=~/.s3cfg --ignore-missing
+fresh https://bitbucket.org/akatov/private.git s3cfg/personal --file=~/.s3cfg --ignore-missing
 
 ## Emacsen.
 
@@ -134,7 +119,7 @@ if [ -e ~/.emacs.d ] && [ ! -L ~/.emacs.d ]; then
   echo "~/.emacs.d is not a symbolic link. Not touching it..."
 else
   rm -rf ~/.emacs.d
-  ln -sf $FRESH_PATH/source/$profile_emacs ~/.emacs.d
+  ln -sf $FRESH_PATH/source/akatov/akamacs ~/.emacs.d
 fi
 
 # exercism.io
