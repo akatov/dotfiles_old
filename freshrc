@@ -83,7 +83,7 @@ fresh https://bitbucket.org/akatov/private.git s3cfg/personal --file=~/.s3cfg --
 ## Emacsen.
 
 # private emacs settings
-fresh git@gitlab.com:akatov/private.git emacs.org --file=~/.config/private-emacs.org
+fresh https://bitbucket.org/akatov/private.git emacs.org --file=~/.config/private-emacs.org
 
 # we need the actual git clone, but fresh wants at least one file linked...
 
