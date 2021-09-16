@@ -4,12 +4,6 @@ FRESH_BIN_PATH=$HOME/.local/bin
 # fresh
 fresh freshshell/fresh bin/fresh --bin
 
-# fresh plugins
-fresh freshshell/fresh-open bin/fresh-open --bin
-
-# shell
-fresh freshshell/fresh-open shell/cdf.sh
-
 #################### ZSH SETUP ####################
 
 # prezto
