@@ -1,5 +1,5 @@
 # fresh stuff
-FRESH_BIN_PATH=$HOME/.bin
+FRESH_BIN_PATH=$HOME/.local/bin
 
 # fresh
 fresh freshshell/fresh bin/fresh --bin
