@@ -67,22 +67,4 @@ fresh-options --file=~/.gitconfig --marker --ignore-missing
   fresh https://bitbucket.org/akatov/private.git gitconfig/personal
 fresh-options
 
-## Emacsen.
-
-# private emacs settings
-fresh https://bitbucket.org/akatov/private.git emacs.org --file=~/.config/private-emacs.org
-
-# we need the actual git clone, but fresh wants at least one file linked...
-
-# My own
-fresh akatov/akamacs init.el --file=~/.tmp/ignore-me
-
-# Emacs
-if [ -e ~/.emacs.d ] && [ ! -L ~/.emacs.d ]; then
-  echo "~/.emacs.d is not a symbolic link. Not touching it..."
-else
-  rm -rf ~/.emacs.d
-  ln -sf $FRESH_PATH/source/akatov/akamacs ~/.emacs.d
-fi
-
 export PATH="${FRESH_BIN_PATH}:${PATH}"
