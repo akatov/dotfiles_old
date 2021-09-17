@@ -55,16 +55,4 @@ fresh-options
 
 #################### END ZSH SETUP ####################
 
-# gitconfig
-
-fresh-options --file=~/.gitconfig --marker --ignore-missing
-  fresh gitconfig/core
-  fresh gitconfig/user
-  fresh gitconfig/alias
-  fresh gitconfig/push
-  fresh gitconfig/credential
-  fresh https://bitbucket.org/akatov/private.git gitconfig/default
-  fresh https://bitbucket.org/akatov/private.git gitconfig/personal
-fresh-options
-
 export PATH="${FRESH_BIN_PATH}:${PATH}"
