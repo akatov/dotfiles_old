@@ -77,30 +77,6 @@ fresh https://bitbucket.org/akatov/private.git emacs.org --file=~/.config/privat
 # My own
 fresh akatov/akamacs init.el --file=~/.tmp/ignore-me
 
-# Spacemacs
-fresh syl20bnr/spacemacs init.el --file=~/.tmp/ignore-me
-
-# Emacs-Live
-fresh overtone/emacs-live init.el --file=~/.tmp/ignore-me
-
-# John Wiegley
-fresh jwiegley/dot-emacs init.el --file=~/.tmp/ignore-me
-
-# Seth Falcon
-fresh seth/my-emacs-dot-d init.el --file=~/.tmp/ignore-me
-
-# Rejeep
-fresh rejeep/emacs init.el --file=~/.tmp/ignore-me
-
-# Daniel Mai
-fresh danielmai/.emacs.d init.el --file=~/.tmp/ignore-me
-
-# ohai-emacs
-fresh bodil/ohai-emacs init.el --file=~/.tmp/ignore-me
-
-# Philip Potter
-fresh philandstuff/dot-emacs init.el --file=~/.tmp/ignore-me
-
 # Emacs
 if [ -e ~/.emacs.d ] && [ ! -L ~/.emacs.d ]; then
   echo "~/.emacs.d is not a symbolic link. Not touching it..."
