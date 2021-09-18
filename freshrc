@@ -11,11 +11,6 @@ fresh sorin-ionescu/prezto . --file=~/.zprezto/
 fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
 fresh zsh-users/zsh-syntax-highlighting . --file=zprezto/modules/syntax-highlighting/external/
 
-# zlogin, zlogout, zshenv
-fresh sorin-ionescu/prezto runcoms/zlogin --file
-fresh sorin-ionescu/prezto runcoms/zlogout --file
-# fresh sorin-ionescu/prezto runcoms/zshenv --file
-
 # completion
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 
