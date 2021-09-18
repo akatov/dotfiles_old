@@ -14,9 +14,6 @@ fresh zsh-users/zsh-syntax-highlighting . --file=zprezto/modules/syntax-highligh
 # completion
 fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion/_fresh
 
-# prompt
-fresh zshrc/prompt --file=prompt/
-
 #################### END ZSH SETUP ####################
 
 export PATH="${FRESH_BIN_PATH}:${PATH}"
