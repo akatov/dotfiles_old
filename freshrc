@@ -10,7 +10,6 @@ fresh freshshell/fresh bin/fresh --bin
 fresh sorin-ionescu/prezto . --file=~/.zprezto/
 fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
 fresh zsh-users/zsh-syntax-highlighting . --file=zprezto/modules/syntax-highlighting/external/
-fresh zsh-users/zaw . --file=~/.zaw/
 
 # zpreztorc
 fresh-options --file=~/.zpreztorc --marker --ignore-missing
