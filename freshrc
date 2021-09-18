@@ -11,20 +11,6 @@ fresh sorin-ionescu/prezto . --file=~/.zprezto/
 fresh zsh-users/zsh-history-substring-search . --file=zprezto/modules/history-substring-search/external/
 fresh zsh-users/zsh-syntax-highlighting . --file=zprezto/modules/syntax-highlighting/external/
 
-# zpreztorc
-fresh-options --file=~/.zpreztorc --marker --ignore-missing
-  fresh zshrc/zpreztorc/general
-  fresh zshrc/zpreztorc/editor
-  fresh zshrc/zpreztorc/git
-  fresh zshrc/zpreztorc/gnu-utility
-  fresh zshrc/zpreztorc/history-substring-search
-  fresh zshrc/zpreztorc/prompt
-  fresh zshrc/zpreztorc/ssh
-  fresh zshrc/zpreztorc/syntax-highlighting
-  fresh zshrc/zpreztorc/terminal
-  fresh zshrc/zpreztorc/tmux
-fresh-options
-
 # zlogin, zlogout, zshenv
 fresh sorin-ionescu/prezto runcoms/zlogin --file
 fresh sorin-ionescu/prezto runcoms/zlogout --file
