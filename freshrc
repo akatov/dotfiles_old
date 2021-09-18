@@ -17,22 +17,6 @@ fresh freshshell/fresh contrib/completion/fresh-completion.zsh --file=completion
 # prompt
 fresh zshrc/prompt --file=prompt/
 
-# zshrc
-fresh-options --file=~/.zshrc --marker --ignore-missing
-  # prezto
-  fresh sorin-ionescu/prezto runcoms/zshrc
-  fresh zshrc/setopt
-  # other
-  fresh https://bitbucket.org/akatov/private.git zshrc/default
-  fresh twe4ked/dotfiles shell/zsh/completion.zsh
-  fresh freshshell/fresh contrib/source-build.sh
-  fresh zshrc/shell2
-  fresh zshrc/dedup-path
-  fresh zshrc/zaw
-  fresh zshrc/pyenv
-  fresh zshrc/direnv
-fresh-options
-
 #################### END ZSH SETUP ####################
 
 export PATH="${FRESH_BIN_PATH}:${PATH}"
