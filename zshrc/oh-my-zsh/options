@@ -1,5 +1,0 @@
-CASE_SENSITIVE="false"         ## case-sensitive completion
-DISABLE_AUTO_UPDATE="false"    ## weekly auto-update checks
-DISABLE_LS_COLORS="false"      ## colors in ls
-DISABLE_AUTO_TITLE="false"     ## autosetting terminal title
-COMPLETION_WAITING_DOTS="true" ## dots while waiting for completion

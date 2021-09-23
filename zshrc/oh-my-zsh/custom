@@ -1,4 +1,0 @@
-export ZSH_CUSTOM="$HOME/.fresh/build/oh-my-zsh-custom"
-plugins+=cask
-plugins+=grunt
-plugins+=zsh-syntax-highlighting
